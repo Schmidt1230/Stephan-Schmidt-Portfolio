@@ -1,0 +1,112 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    box-sizing: border-box;
+}
+
+/*top section */
+#top {
+    margin-bottom: 5em;
+}
+#div-nav{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+nav, .nav-links{
+    display: flex;
+    padding-left: 1em;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-links{
+    font-size: 1.5rem;
+    gap: 1.5rem;
+    color: rgb(85,85,85);
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    text-underline-offset: 0.5rem;
+    color: #006BE4;
+    text-decoration: underline;
+    text-decoration-color: #006BE4;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+#profile{
+    display: flex;
+    position: relative;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 0;
+    height: 80vh;
+}
+#prof-img,#prof-descr{
+    width: 40%;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#prof-img{
+    margin: auto 0;
+}
+
+#profile-pic
+{
+    height: 60%;
+    max-height: 500px;
+    border-radius: 2em;
+    
+}
+
+#prof-descr{
+    text-align: center;
+    align-self: center;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    color: rgb(85,85,85);
+    display: block;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color:rgb(85,85,85);
+    display: block;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    display: block;
+}
