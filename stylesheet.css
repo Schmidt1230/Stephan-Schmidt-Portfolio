@@ -146,3 +146,84 @@ h1{
     border-color: rgb(85,85,85);
     
 }
+
+/*About section*/
+
+#about{
+    margin: 5rem;
+    border: rgb(85,85,85) solid 3px;
+    border-radius: 3em;
+    align-items: center;
+    position: relative;
+}
+
+.about-text{
+    width: 70%;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+}
+
+/*Education section*/
+
+#education{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: 3em;
+    align-items: center;
+    position: relative;
+}
+
+.img-containter-cntr{
+    margin: auto;
+
+}
+
+#nwu-logo{
+    max-width: 40%;
+    max-height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading-container{
+    width: 40%;
+    border-color: rgb(85,85,85);
+    border: rgb(85,85,85) solid;
+    border-radius: 3em;
+    padding: 1.5em;
+    margin: auto;
+}
+
+
+/*Polaroid effect*/
+.polaroid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3em;
+    padding-top: 3em;
+    width: 40%;
+    max-height: 200px;
+    max-height: 20%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    max-height: 600px;
+    max-width: 300px;
+  }
+  
+.polaroid-caption {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .nwu-pic{
+    max-height: 80%;
+    max-width: 100%;
+    margin: auto;
+    max-height: 500px;
+    max-width: 250px;
+  }
