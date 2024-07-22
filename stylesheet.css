@@ -58,6 +58,7 @@ a:hover{
 
 body {
     font-family: "Raleway", sans-serif;
+    background-color: ;
 }
 
 #profile{
@@ -121,4 +122,27 @@ h1{
     display: block;
     padding: 0;
     margin: 0;
+}
+
+.btn-container{
+    padding-top: 1em;
+}
+/*Button*/
+.reg-btn{
+    padding-top: 1em;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    color: #006BE4;
+    background-color: #fff;
+    border-color: #006BE4;
+}
+
+.reg-btn:hover{
+    cursor: pointer;
+    color: rgb(85,85,85);
+    border-color: rgb(85,85,85);
+    
 }
