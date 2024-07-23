@@ -128,8 +128,21 @@ h1{
 
 .btn-container{
     padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 /*Button*/
+.clickable-icon{
+    height: 5em;
+    width: 5em;
+}
+.clickable-icon:hover{
+    cursor: pointer;
+    height: 6em;
+    width: 6em;
+
+}
 .reg-btn{
     padding-top: 1em;
     font-weight: 600;
@@ -163,8 +176,12 @@ h1{
 .about-text{
     width: 70%;
     margin-left: auto;
-    text-align: center;
+    text-align: left;
     margin-right: auto;
+}
+
+.abt-me{
+    text-align: center;
 }
 
 /*Education section*/
@@ -201,6 +218,7 @@ h1{
 }
 
 .heading-container{
+    text-align: center;
     width: 40%;
     border-color: rgb(85,85,85);
     border: rgb(85,85,85) solid;
