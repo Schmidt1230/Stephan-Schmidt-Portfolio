@@ -310,7 +310,8 @@ h1{
   /*Experience*/
 
 .work-container{
-    
+    margin-top: 2em;
+    text-align: left;
 }
 /* Media query for smaller screens */
 @media (max-width: 600px) {
