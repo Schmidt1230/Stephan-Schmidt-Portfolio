@@ -15,6 +15,7 @@ section{
 #top {
     margin-bottom: 5em;
 }
+
 #div-nav{
     display: flex;
     gap: 2rem;
@@ -55,22 +56,21 @@ a:hover{
     color: #006BE4;
     text-decoration: underline;
     text-decoration-color: #006BE4;
+    font-size: 1.7rem;
 }
 
 body {
     font-family: "Raleway", sans-serif;
-    background-color: ;
 }
 
 #profile{
+    margin-top: 0;
     display: flex;
     position: relative;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     margin-top: 0;
     height: 80vh;
-    justify-content: center;
-    
 }
 #prof-img,#prof-descr{
     width: 50%;
@@ -78,10 +78,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    display: block;
+    flex-wrap: wrap;
 }
+
 #prof-img{
     margin: auto 0;
     max-width: 100%;
+    
 }
 
 #profile-pic
@@ -89,9 +93,7 @@ body {
     height: 60%;
     max-height: 500px;
     border-radius: 2em;
-    text-align: right;
-    
-    
+    text-align: right;    
 }
 
 #prof-descr{
@@ -130,17 +132,20 @@ h1{
     padding-top: 1em;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    gap: 0;
+    /*flex-wrap: wrap;*/
 }
 /*Button*/
 .clickable-icon{
+    max-width: 6em;
+    max-height: 6em;
     height: 5em;
     width: 5em;
 }
 .clickable-icon:hover{
     cursor: pointer;
-    height: 6em;
-    width: 6em;
+    height: 4.5em;
+    width: 4.5em;
 
 }
 .reg-btn{
@@ -150,16 +155,26 @@ h1{
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-    color: #006BE4;
+    color: #fff;
     background-color: #fff;
-    border-color: #006BE4;
+    border-color: black;
+    background-color: rgb(85,85,85);
 }
 
 .reg-btn:hover{
     cursor: pointer;
     color: rgb(85,85,85);
     border-color: rgb(85,85,85);
+    background-color: black;
     
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 0;
 }
 
 /*About section*/
