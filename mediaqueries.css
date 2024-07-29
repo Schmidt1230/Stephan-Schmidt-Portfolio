@@ -33,6 +33,7 @@
     #polaroid-container {
         flex-direction: column;
         align-items: center;
+        width: 80%;
     }
 
     .polaroid {
@@ -53,6 +54,8 @@
     .heading-container{
         width: 80%;
     }
+
+    
 
 }
 
