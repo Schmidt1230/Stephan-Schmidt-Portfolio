@@ -3,16 +3,19 @@
     #gallery{
         display: flex;
         flex-direction: column;
-    }
-    #profile{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        flex-direction: column;
         flex-wrap: wrap;
         margin-left: auto;
         margin-right: auto;
         align-items: center;
+       
+    }
+    #profile{
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5em;
     }
     #prof-descr{
         flex-direction: column;
@@ -29,6 +32,23 @@
         margin-right: auto;
     }
 
+    .projects-class{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-img{
+       max-width: 300px;
+    }
+
+    .project-media-container{
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+
 
     #polaroid-container {
         flex-direction: column;
@@ -37,12 +57,12 @@
     }
 
     .polaroid {
-        width: 80%; /* Adjust width as needed for mobile view */
-        margin-bottom: 20px; /* Add margin to separate stacked items */
+        width: 80%; 
+        margin-bottom: 20px; 
     }
 
     #about{
-        margin-top: 5em;
+        margin-top: 10em;
         width: 80%;
         margin: auto;
     }
@@ -53,6 +73,13 @@
 
     .heading-container{
         width: 80%;
+    }
+
+    #chatterbox{
+        margin-left: -2.7em;
+        text-align: left;
+        font-size: small;
+        align-items: center;
     }
 
     
