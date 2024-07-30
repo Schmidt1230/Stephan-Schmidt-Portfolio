@@ -72,7 +72,7 @@ body {
     display: flex;
     position: relative;
     flex-direction: row;
-    flex-wrap: wrap;
+    
     margin-top: 0;
     height: 80vh;
 }
@@ -104,6 +104,11 @@ body {
     text-align: center;
     align-self: center;
     text-align: left;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h3{
@@ -137,15 +142,11 @@ h1{
     display: flex;
     flex-direction: row;
     gap: 0;
+    margin-bottom: 1.5em;
     /*flex-wrap: wrap;*/
 }
 /*Button*/
-.clickable-icon{
-    max-width: 6em;
-    max-height: 6em;
-    height: 5em;
-    width: 5em;
-}
+
 .clickable-icon:hover{
     cursor: pointer;
 }
@@ -153,9 +154,11 @@ h1{
     padding-top: 1em;
     font-weight: 600;
     transition: all 300ms ease;
+    margin-right: 1em;
     padding: 1rem;
+    height: 4em;
     width: 8rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     color: #fff;
     background-color: #fff;
     border-color: black;
@@ -164,8 +167,9 @@ h1{
 
 .reg-btn:hover{
     cursor: pointer;
-    color: rgb(85,85,85);
+    color: white;
     border-color: rgb(85,85,85);
+    
     background-color: black;
     
 }
@@ -344,6 +348,14 @@ h1{
     margin-right: 1em;
   }
 
+  .clickable-icon{
+    max-width: 6em;
+    max-height: 6em;
+    height: 4em;
+    width: 4em;
+    margin: 0;
+}
+
   #experience,.experience
   {
     position: relative;
@@ -417,4 +429,42 @@ video {
 
     #gallery .heading-container{
         border: 0;
+    }
+
+    .track .icon{
+        margin: 0;
+    }
+
+    .logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 4em;
+        border-radius: 30px;
+        padding: 3em;
+            .marquee{
+                width : 100vw;
+                max-width: 100%;
+                height: 128px;
+                overflow: hidden;
+                position: relative;
+                .track{
+                    position: absolute;
+                    white-space: nowrap;
+                    will-change: transform;
+                    animation: marquee 40s linear infinite;
+                    display: flex;
+                    gap : 10px;
+                }
+            }
+    }
+
+    @keyframes marquee{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-50%);
+        }
     }
