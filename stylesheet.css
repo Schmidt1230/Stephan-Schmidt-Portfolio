@@ -249,8 +249,12 @@ h1{
 
 #gallery{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
 }
+
+
 /*Polaroid effect*/
 .polaroid {
     display: flex;
@@ -340,14 +344,13 @@ h1{
     margin-right: 1em;
   }
 
-  #experience
+  #experience,.experience
   {
     position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: auto;
-
   }
   #work-experience{
     display: flex;
@@ -366,34 +369,27 @@ h1{
 
 #projects{
     position: relative;
-    justify-content: center;
-    text-align: left;
-    border-radius: 5em ;
-    border: rgb(85,85,85) solid 3px;
-    margin-bottom: 4em;
-    width: 90%;
-    margin: auto;
-    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto;
 }
 
 .project-class h1,.project-class h2,.project-class h3{
-    text-align: center;
+    text-align: left;
 }
 
+
+
 .project-class p{
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
 
 }
 
-#chatterbox{
-    justify-content: center;
-    display: block;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: auto;
-}
+
 video {
     width: 60%;
     height: auto;
@@ -419,3 +415,6 @@ video {
     height: 60%;
 }
 
+    #gallery .heading-container{
+        border: 0;
+    }

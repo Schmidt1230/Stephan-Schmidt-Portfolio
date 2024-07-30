@@ -23,6 +23,7 @@
         margin: 0 auto 5em;
     }
     
+    /*
     #gallery{
         display: flex;
         flex-direction: column;
@@ -32,7 +33,7 @@
         align-items: center;
        
     }
-
+    */
     #profile{
         display: block;
         flex-direction: column;
@@ -55,15 +56,24 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-
-    .projects-class{
-        align-items: center;
-
-        padding: 1em;
+    .project-class{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
+
+
     .projects-class h1, .projects-class h2, .projects-class h3{
         text-align: center;
+    }
+
+    .project-class p{
+        text-align: left;
+        margin-left: -2em;
+        margin-right: auto;
+        font-size: smaller;
+        
+    
     }
     .project-img{
        max-width: 300px;
@@ -79,14 +89,15 @@
     .polaroid {
         width: 80%; 
         min-width: 300px;
-        margin-bottom: 20px; 
+        margin: 20px auto; /* Centering the polaroid elements */
     }
 
 
     #polaroid-container {
-        display: block;
+        display: flex; /* Use flexbox for the container */
+        flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 100%;
     }
 
 

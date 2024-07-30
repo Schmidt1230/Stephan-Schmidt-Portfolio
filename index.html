@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <section id = "top">
+    <section id = "top" class="section-container">
         <div id = "div-nav">
         <nav>
             <ul class = "nav-links">
@@ -24,30 +24,29 @@
         </nav>
     </div>
 
-
-    <div id="profile">
-        <div id = "prof-img">
-            <img src="./assets/profile-pic.jpg" alt="Experience icon" id = "profile-pic">    
-        </div>
-        <div id = "prof-descr">
-            <h3 class = "smoll-head">Hi I'm</h3>
-            <h1 class = "big-head">Stephan Schmidt</h1>
-            <h2 class = "med-head">a Programmer</h2>
-            <h3>email: stephanschmidt1230@gmail.com</h3>
-            <h3>location: Gauteng, South-Africa</h3>
-            <div class = "btn-container">
-                <div>
-                    <button class = "reg-btn" onclick = "location.href='https://drive.google.com/file/d/1hwNiMKEmLtNW6IC5E06W6Xuj-SCzGPLl/view?usp=drive_link'">Download CV</button>
-                </div>
-                <div class = "socials">
-                    <img src="./assets/GitHub-icon.ico" alt="My github profile" class = "clickable-icon icon" onclick="location.href = 'https://github.com/Schmidt1230'">
-                    <img src="./assets/linkedIn.png" alt="My linkedIn profile" class = "clickable-icon icon" onclick="location.href = 'https://www.linkedin.com/in/stephan-schmidt-a13555265/'">
-                </div>  
+        <div id="profile">
+            <div id = "prof-img">
+                <img src="./assets/profile-pic.jpg" alt="Experience icon" id = "profile-pic">    
             </div>
-            
+            <div id = "prof-descr">
+                <h3 class = "smoll-head">Hi I'm</h3>
+                <h1 class = "big-head">Stephan Schmidt</h1>
+                <h2 class = "med-head">a Programmer</h2>
+                <h3>email: stephanschmidt1230@gmail.com</h3>
+                <h3>location: Gauteng, South-Africa</h3>
+                <div class = "btn-container">
+                    <div>
+                        <button class = "reg-btn" onclick = "location.href='https://drive.google.com/file/d/1hwNiMKEmLtNW6IC5E06W6Xuj-SCzGPLl/view?usp=drive_link'">Download CV</button>
+                    </div>
+                    <div class = "socials">
+                        <img src="./assets/GitHub-icon.ico" alt="My github profile" class = "clickable-icon icon" onclick="location.href = 'https://github.com/Schmidt1230'">
+                        <img src="./assets/linkedIn.png" alt="My linkedIn profile" class = "clickable-icon icon" onclick="location.href = 'https://www.linkedin.com/in/stephan-schmidt-a13555265/'">
+                    </div>  
+                </div>
+                
+            </div>
         </div>
-    </div>
-    
+
     
     <section id = "about">
         <div class="about-text">
@@ -85,7 +84,7 @@
     </section>
     
 
-    <section id = "skills">
+    <section id = "skills" class ="section-container">
         <div id = "skills-container">
             <div id = "coding-skills">
                 <h3>My</h3>
@@ -165,7 +164,7 @@
 
     </section>
 
-    <section id = "experience">
+    <section id = "experience" class="section-container">
         <div class="heading-container">
             <h1>Experience</h1>
         
@@ -228,11 +227,10 @@
     </div>
     </section>
 
-    <section id = "projects" class = "project-class">
-        <div>
+    <section id = "projects" class = "section-container">
+        <div class = "heading-container">
             <h3>View my</h3>
             <h1>Projects</h1>
-            <div id = "chatterbox">
                 <h2>ChatterBox</h2>
                 <p>ChatterBox is a Python desktop application using the library Tkinter and Customtkinter.
                     The platform uses Google's Firebase to store User information. The application encrypts user passwords using a hash library and encrypts using the user's password. ChatterBox allows Users to add a friend and message them directly with real-time message updates, this is done using a "listener"
@@ -250,36 +248,37 @@
                 <div class = "project-media-container">
                     <video controls src="./assets/chatterbox.mp4" class ="project-img"></video>
                 </div>
-            </div>
         </div>
     </section>
 
     <section id = "gallery">
-        <h1>Gallery</h1>
-        <div id = "polaroid-container">
-            <div class="polaroid">
-                <img src = "/assets/Enid, Oklahoma.jpg" class="nwu-pic">
-                <div class = "polaroid-caption">
-                    <p>Enid, Oklahoma</p>
+        <div class = "heading-container">
+            <h1>Gallery</h1>
+            <div id = "polaroid-container">
+                <div class="polaroid">
+                    <img src = "/assets/Enid, Oklahoma.jpg" class="nwu-pic">
+                    <div class = "polaroid-caption">
+                        <p>Enid, Oklahoma</p>
+                    </div>
                 </div>
-            </div>
-            <div class="polaroid">
-                <img src = "/assets/Colby, Kansas.jpg" class="nwu-pic">
-                <div class = "polaroid-caption">
-                    <p>Colby, Kansas</p>
+                <div class="polaroid">
+                    <img src = "/assets/Colby, Kansas.jpg" class="nwu-pic">
+                    <div class = "polaroid-caption">
+                        <p>Colby, Kansas</p>
+                    </div>
                 </div>
-            </div>
-          
-            <div class="polaroid">
-                <img src = "/assets/Hendricks, Minnesota.jpg" class="nwu-pic">
-                <div class = "polaroid-caption">
-                    <p>Hendricks, Minnesota</p>
+            
+                <div class="polaroid">
+                    <img src = "/assets/Hendricks, Minnesota.jpg" class="nwu-pic">
+                    <div class = "polaroid-caption">
+                        <p>Hendricks, Minnesota</p>
+                    </div>
                 </div>
-            </div>
-            <div class="polaroid">
-                <img src = "/assets/Glenhaven, Wisconsin.png" class="nwu-pic">
-                <div class = "polaroid-caption">
-                    <p>Glenhaven, Wisconsin</p>
+                <div class="polaroid">
+                    <img src = "/assets/Glenhaven, Wisconsin.png" class="nwu-pic">
+                    <div class = "polaroid-caption">
+                        <p>Glenhaven, Wisconsin</p>
+                    </div>
                 </div>
             </div>
         </div>
