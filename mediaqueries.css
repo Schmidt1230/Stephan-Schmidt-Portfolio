@@ -1,5 +1,28 @@
 /* Media query for smaller screens */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
+    body, section {
+        max-width: 96vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+    }
+    h1 {
+        font-size: large;
+    }
+    h2{
+        font-size: medium;
+    }
+    h3,p{
+        font-size: small;
+    }
+
+    #gallery, #profile, .projects-class {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto 5em;
+    }
+    
     #gallery{
         display: flex;
         flex-direction: column;
@@ -9,6 +32,7 @@
         align-items: center;
        
     }
+
     #profile{
         display: block;
         flex-direction: column;
@@ -32,12 +56,15 @@
         margin-right: auto;
     }
 
+
     .projects-class{
         align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
+        padding: 1em;
+    }
+    .projects-class h1, .projects-class h2, .projects-class h3{
+        text-align: center;
+    }
     .project-img{
        max-width: 300px;
     }
@@ -46,27 +73,29 @@
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-    }
-
-
-
-    #polaroid-container {
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
+        width: 70%;
     }
 
     .polaroid {
         width: 80%; 
+        min-width: 300px;
         margin-bottom: 20px; 
     }
+
+
+    #polaroid-container {
+        display: block;
+        align-items: center;
+        width: 80%;
+    }
+
+
 
     #about{
         margin-top: 10em;
         width: 80%;
         margin: auto;
     }
-
     #coding-skills,#data-skills,#frameworks,#platforms{
         width: 90%;
     }
@@ -74,9 +103,21 @@
     .heading-container{
         width: 80%;
     }
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto ;
+        margin-right: auto;
+        justify-content: center;
+    }
 
+    .projects-class{
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
     #chatterbox{
-        margin-left: -2.7em;
+        padding: 1em;
         text-align: left;
         font-size: small;
         align-items: center;
