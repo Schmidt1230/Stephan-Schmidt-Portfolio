@@ -35,6 +35,7 @@
     }
     */
     #profile{
+        width: 96vw;
         display: block;
         flex-direction: column;
         flex-wrap: wrap;
@@ -42,9 +43,10 @@
         margin-right: auto;
         margin-bottom: 5em;
     }
+
     #prof-descr{
         flex-direction: column;
-        margin-top: -6em;
+        margin-top: -10em;
     }
     #div-nav{
         display: none;
@@ -55,6 +57,7 @@
         width: 60%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0;
     }
     .project-class{
         display: flex;
