@@ -491,3 +491,19 @@ video {
         gap: 1em;
         padding: 1em;
     }
+
+
+    #mobile-navigation{
+        width: 100%;
+        display: none;
+        flex-direction: row;
+        
+        justify-content: center;
+    }
+
+    #mobile-navigation .icon{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        height: 2em;
+        width: 2em;
+    }

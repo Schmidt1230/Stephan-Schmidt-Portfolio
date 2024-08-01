@@ -43,7 +43,10 @@
         max-height: 400px;
         max-width: 250px;
         margin-bottom: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
     }
+
     #div-nav{
         display: none;
     }
@@ -52,6 +55,7 @@
         height: 80%;
         width: 60%;
         margin-bottom: 0;
+        
     }
     .project-class{
         display: flex;
@@ -136,6 +140,10 @@
     
     #skills{
         width: 90%;
+    }
+
+    #mobile-navigation{
+        display: flex;
     }
 }
 
