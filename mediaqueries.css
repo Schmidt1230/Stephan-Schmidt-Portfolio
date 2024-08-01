@@ -1,10 +1,15 @@
 /* Media query for smaller screens */
 @media screen and (max-width: 800px) {
     body, section {
-        max-width: 96vw;
+        max-width: 100vw;
+
         display: flex;
         flex-direction: column;
         gap: 5em;
+
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     h1 {
         font-size: large;
@@ -26,7 +31,6 @@
     
     #profile{
         width: 100vw;
-        width: 100%;
         margin-bottom: 5em;
     }
 
@@ -36,10 +40,8 @@
     }
 
     #profile-pic{
-        max-height: 300px;
-        max-width: 150px;
-        margin-left: auto;
-        margin-right: auto;
+        max-height: 400px;
+        max-width: 250px;
         margin-bottom: 1.5em;
     }
     #div-nav{
@@ -49,8 +51,6 @@
     #prof-img{
         height: 80%;
         width: 60%;
-        margin-left: auto;
-        margin-right: auto;
         margin-bottom: 0;
     }
     .project-class{
@@ -94,7 +94,6 @@
         display: flex; /* Use flexbox for the container */
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
 
 
@@ -112,10 +111,9 @@
         width: 80%;
     }
     .btn-container{
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        margin-left: auto ;
-        margin-right: auto;
+        flex-direction: row;
         justify-content: center;
     }
 
@@ -136,6 +134,8 @@
     margin-right: auto;
     }
     
-
+    #skills{
+        width: 90%;
+    }
 }
 
