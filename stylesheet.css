@@ -393,7 +393,11 @@ h1{
     text-align: left;
 }
 
-
+.project-container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    margin-bottom: 30px; /* Space between projects */
+}
 
 .project-class p{
     text-align: left;
@@ -416,6 +420,7 @@ video {
 .project-media-container{
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     width: 70%;
     
     max-height: 500px;
@@ -425,8 +430,8 @@ video {
 }
 
 .project-img{
-    width: 80%;
-    height: 60%;
+    width: 100%; 
+    height: auto;
 }
 
     #gallery .heading-container{
@@ -439,7 +444,16 @@ video {
 
 
 
-
+    .horizontal-list {
+        list-style-type: disc;
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+    }
+    
+    .horizontal-list li {
+        display: inline-block; /* Align items horizontally */
+        margin-right: 20px; /* Space between items */
+    }
 
 
     /*Animation*/
