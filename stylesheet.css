@@ -14,7 +14,7 @@ section {
     box-sizing: border-box;
     flex-wrap: wrap;
     max-width: 100vw;
-
+    min-height: 100vh; /* Use min-height to ensure sections take up at least full viewport height */
 }
 
 /*top section */
@@ -66,14 +66,13 @@ a:hover{
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 #profile{
     position: relative;
     margin-top: 0;
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
     margin-top: 3em;
 
 }
@@ -88,7 +87,7 @@ p, li {
     font-weight: 300; /* Lighter for paragraphs */
 }
 
-#prof-img,#prof-descr{
+#prof-img, #prof-descr {
     width: 50%;
     margin-top: 5em;
     margin-left: auto;
@@ -99,17 +98,31 @@ p, li {
     justify-content: center;
 }
 
-#prof-img{
+#prof-img {
     margin: auto 0;
     max-width: 100%; 
 }
 
-#profile-pic
-{
-    height: 60%;
+#profile-pic {
+    width: 100%;
+    max-width: 300px; 
+    height: auto; 
     max-height: 500px;
     border-radius: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    object-fit: cover; 
 }
+
+
+@media (max-width: 768px) {
+    #prof-img, #prof-descr {
+        width: 80%; 
+    }
+    #profile-pic {
+        max-width: 200px; 
+    }
+}
+
 
 #prof-descr{
     text-align: center;
@@ -180,18 +193,29 @@ h1{
     cursor: pointer;
     color: white;
     border-color: rgb(85,85,85);
-    
     background-color: black;
-    
 }
 
-.socials{
+.socials {
     display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    gap: 0;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
 }
+
+.clickable-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.clickable-icon:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 25%; 
+}
+
 
 /*About section*/
 
@@ -249,7 +273,7 @@ h1{
 
 .heading-container{
     text-align: center;
-    width: 40%;
+    width: auto;
     border-color: rgb(85,85,85);
     border: rgb(85,85,85) solid;
     border-radius: 3em;
@@ -306,53 +330,87 @@ h1{
     max-width: 250px;
   }
 
-
-  #skills{
-    
+/*Skills section*/
+  #skills {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 3em;
     position: relative;
     margin-top: 3em;
-  }
+}
 
-  #coding-skills,#data-skills,#frameworks,#platforms{
-    border: rgb(85,85,85) solid 3px;
-    border-radius: 3em;
-    width: 40%;
+#skills-container {
+    width: 80%;
     margin: auto;
-    padding: 1.5em;
+    align-items: center; /* Center the cards */
+    width: 100%; /* Set container to full width */
+}
+
+#coding-skills, #data-skills, #platforms, #frameworks {
+    border: 3px solid rgb(85, 85, 85);
+    border-radius: 3em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
     margin-top: 3em;
-  }
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 80%; /* Maintain reduced width */
+    max-width: 900px; /* Limit max width to 900px */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
 
-  .icons-container{
-    margin-left: auto;
-    margin-right: auto;
+#coding-skills:hover, #data-skills:hover, #platforms:hover, #frameworks:hover {
+    transform: scale(1.05);
+}
+
+.icons-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-  }
-  .icon{
+    gap: 2em;
+    margin-top: 1em;
+}
+
+.icon-w-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 8em;
+}
+
+.icon {
+    height: 4em;
+    width: 4em;
+    margin-bottom: 0.5em;
+}
+
+h1, h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.skill-text {
+    font-size: 1.1em;
+    font-family: 'Arial', sans-serif;
     margin-top: 0.5em;
-    height: 3em;
-    width: 3em;
-  }
+}
 
-  .icon-w-caption{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 
-  .icon{
-    margin-left: 2em;
-    margin-right: 1em;
-  }
 
   .clickable-icon{
     max-width: 6em;
@@ -392,7 +450,7 @@ h1{
 #projects{
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     margin-top: auto;
 }
@@ -466,7 +524,7 @@ video {
 
     /*Animation*/
 
-    .logos{
+    .logos {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -474,29 +532,31 @@ video {
         height: 4em;
         border-radius: 30px;
         padding: 3em;
-            .marquee{
-                width : 100vw;
-                max-width: 100%;
-                height: 128px;
-                overflow: hidden;
-                position: relative;
-                .track{
-                    position: absolute;
-                    white-space: nowrap;
-                    will-change: transform;
-                    animation: marquee 40s linear infinite;
-                    display: flex;
-                    gap : 10px;
-                }
-            }
     }
-
-    @keyframes marquee{
-        0%{
-            transform: translateX(0);
+    
+    .marquee {
+        width: 100vw;
+        max-width: 100%;
+        height: 128px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .track {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 40s linear infinite;
+        display: flex;
+        gap: 10px;
+    }
+    
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%); /* Start from the right side */
         }
-        100%{
-            transform: translateX(-50%);
+        100% {
+            transform: translateX(-100%); /* Move to the left */
         }
     }
 
@@ -530,10 +590,7 @@ video {
         width: 2em;
     }
 
-    .hms-project-section {
-        display: flex;
-        flex-direction: row;
-    }
+    
 
     #app-img {
         float: right; /* Change to 'left' to float to the left */
@@ -542,7 +599,7 @@ video {
         max-width: 80%; /* Ensure the image is responsive */
         
         height: auto; /* Maintain aspect ratio */
-        max-height: 500;
+        max-height: 300;
 
         padding: 20;
     }
@@ -554,4 +611,117 @@ video {
         clear: both;
     }
     
-    
+    /* HUMAN MOVEMENT SCIENCES SECTION */
+/* General section styling */
+#hms-project-section {
+    background-color: #f9f9f9;
+    padding: 2em 1.5em; /* Reduced padding */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin: 2em auto; /* Reduced margin */
+    max-width: 900px; /* Reduced max-width to fit better */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect to amplify floating effect */
+#hms-project-section:hover {
+    transform: translateY(-5px); /* Slightly less lift */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styling */
+#hms-project-section h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 1.8em; /* Reduced header font size */
+}
+
+#hms-project-section p {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+#hms-project-section ul {
+    padding-left: 1em; /* Reduced padding for list */
+    margin-bottom: 1em;
+}
+
+/* General list styling */
+.horizontal-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping to multiple lines */
+    list-style: none;
+    padding: 0;
+    gap: 15px; /* Increases gap between items */
+    margin: 0 auto;
+}
+
+/* Individual list item styling */
+.horizontal-list li {
+    padding: 0.5em 1.2em; /* Better padding for larger clickable area */
+    background-color: #eef6ff; /* Softer background color */
+    border-radius: 20px; /* Rounded corners */
+    margin: 0.5em; /* Adds spacing between items */
+    font-weight: bold;
+    font-size: 1em; /* Larger, clearer font */
+    color: #333; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a floating effect */
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+/* Hover effect for list items */
+.horizontal-list li:hover {
+    background-color: #ddeeff; /* Slightly brighter hover */
+    transform: translateY(-3px); /* Floating effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Image styling */
+.socials .clickable-icon {
+    width: 40px; /* Reduced icon size */
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.socials .clickable-icon:hover {
+    transform: scale(1.05); /* Reduced hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.socials p {
+    margin-bottom: 0.4em;
+    text-align: center;
+}
+
+/* Container styling */
+.section-container {
+    text-align: center;
+}
+
+.heading-container {
+    margin: auto;
+    max-width: 700px; /* Reduced container width */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    #hms-project-section {
+        padding: 1.5em; /* Adjust padding for mobile */
+    }
+
+    .horizontal-list {
+        flex-direction: column;
+    }
+
+    .socials .clickable-icon {
+        width: 35px; /* Further reduce size for mobile */
+        height: 35px;
+    }
+}
